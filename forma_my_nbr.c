@@ -6,31 +6,32 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:17:35 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/05 09:22:10 by ltestard         ###   ########.fr       */
+/*   Updated: 2022/12/06 23:45:47 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putnbr(int nb)
+int	forma_my_nbr(unsigned int nb)
 {
-	if (nb == -2147483648)
+	if (nb == 0)
 	{
-		write(1, "-2147483648", 11);
+		write(1, "0", 1);
 		return ;
 	}
 	else if (nb < 0)
 	{
 		nb = -1 * nb;
-		ft_putchar('-');
+		forma_my_char('-');
 	}
 	if (nb > 9)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		forma_my_nbr(nb / 10);
+		forma_my_nbr(nb % 10);
 	}
 	else
 	{
-		ft_putchar(nb + '0');
+		forma_my_char(nb + '0');
 	}
+	return (1);
 }

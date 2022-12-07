@@ -1,8 +1,8 @@
-SRCS =
+SRCS = forma_my_putstr.c forma_my_nbr.c forma_my_char.c ft_printf.c other_fonction.c convert_fonction.c
 
 OBJS = $(SRCS:.c=.o)
 
-NAME = libft.a
+NAME = libftprintf.a
 all : $(NAME)
 
 .c.o:

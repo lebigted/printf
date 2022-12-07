@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:10:44 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/05 09:10:45 by ltestard         ###   ########.fr       */
+/*   Updated: 2022/12/06 23:45:10 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
+
+int		forma_my_putstr(char *str);
+int	forma_my_nbr(unsigned int nb);
+int		forma_my_char(int c);
+int		forma_my_printf(const char *parms, ...);
+int		convert_fonctions(va_list p_arg,char forma);
 
 #endif

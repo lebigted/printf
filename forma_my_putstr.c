@@ -6,13 +6,13 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:12:09 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/05 09:26:20 by ltestard         ###   ########.fr       */
+/*   Updated: 2022/12/06 20:15:39 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_putstr(char *str)
+int	forma_my_putstr(char *str)
 {
 	int	i;
 

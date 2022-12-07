@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   forma_my_char.c                                    :+:      :+:    :+:   */
+/*   other_fonction.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/05 09:17:15 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/06 23:26:52 by ltestard         ###   ########.fr       */
+/*   Created: 2022/12/06 19:54:44 by ltestard          #+#    #+#             */
+/*   Updated: 2022/12/06 23:42:30 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+/*#include "printf.h"
 
-int	forma_my_char(int c)
+void ft_putchar(int c)
 {
 	write(1, &c, 1);
-	return (1);
-}
+}*/
+
