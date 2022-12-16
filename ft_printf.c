@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 13:44:10 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/06 20:27:47 by ltestard         ###   ########.fr       */
+/*   Updated: 2022/12/16 04:49:27 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int ft_printf(const char *parms, ...)
 	return (result);
 }
 
-/*int	convert_fonctions(va_list p_arg,char forma)
+int	convert_fonctions(va_list p_arg,char forma)
 {
 	int i;
 
@@ -64,5 +64,5 @@ int ft_printf(const char *parms, ...)
 	else if (forma == '%')
 		i += forma_my_char(i);
 	return (i);
-}*/
+}
 

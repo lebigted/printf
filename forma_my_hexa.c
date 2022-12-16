@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   forma_my_nbr.c                                     :+:      :+:    :+:   */
+/*   forma_my_hexa.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:17:35 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/06 23:45:47 by ltestard         ###   ########.fr       */
+/*   Updated: 2022/12/16 05:03:18 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
+
+int count
+
+
+putchar
 
 int	forma_my_nbr(unsigned int nb)
 {
 	if (nb == 0)
 	{
 		write(1, "0", 1);
-		return ;
+		return nb;
 	}
 	else if (nb < 0)
 	{
@@ -35,3 +40,17 @@ int	forma_my_nbr(unsigned int nb)
 	}
 	return (1);
 }
+
+int forma_my_nbrbase(unsigned int nb)
+{
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nb *= -1;
+	}
+	nb = (unsigned int)nb;
+	if (nb / 16)
+		ft_putnbr(nb / 16);
+	ft_putchar((nb % 16) + '0');
+}
+

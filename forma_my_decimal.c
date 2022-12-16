@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   other_fonction.c                                   :+:      :+:    :+:   */
+/*   forma_my_decimal.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/06 19:54:44 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/06 23:42:30 by ltestard         ###   ########.fr       */
+/*   Created: 2022/12/06 19:36:40 by ltestard          #+#    #+#             */
+/*   Updated: 2022/12/16 05:03:38 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "printf.h"
+#include "printf.h"
 
-void ft_putchar(int c)
+statc int	if_is_negatif(int n)
 {
-	write(1, &c, 1);
-}*/
+
+}
 
