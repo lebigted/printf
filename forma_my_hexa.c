@@ -6,13 +6,17 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:17:35 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/16 05:03:18 by ltestard         ###   ########.fr       */
+/*   Updated: 2023/01/10 20:18:30 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int count
+int countkjdfskjfqklfjlaqfjdlq
+f,qs
+qdqsd
+qsdqsd
+qsd
 
 
 putchar
