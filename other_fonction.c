@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   forma_my_decimal.c                                 :+:      :+:    :+:   */
+/*   other_fonction.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/06 19:36:40 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/16 05:03:38 by ltestard         ###   ########.fr       */
+/*   Created: 2022/12/06 19:54:44 by ltestard          #+#    #+#             */
+/*   Updated: 2022/12/22 12:35:53 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+/*#include "printf.h"
 
-statc int	if_is_negatif(int n)
+static void ft_putchar(int c)
 {
-
+	write(1, &c, 1);
 }
 
+static char countnbr(int nb)
+{
+	int a;
+
+	a = 0;
+	while (a >= nb)
+	{
+		ft_putchar(a);
+		a++;
+	}
+	return (a);
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:17:15 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/15 06:27:58 by ltestard         ###   ########.fr       */
+/*   Updated: 2022/12/06 23:26:52 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,3 @@ int	forma_my_char(int c)
 	write(1, &c, 1);
 	return (1);
 }
-// affiche un cara
