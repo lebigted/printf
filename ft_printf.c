@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 13:44:10 by ltestard          #+#    #+#             */
-/*   Updated: 2022/12/29 18:00:04 by ltestard         ###   ########.fr       */
+/*   Updated: 2023/01/14 03:49:19 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int ft_printf(const char *parms, ...)
 	va_end(p_arg);
 	return (result);
 }
-/*
+
 int	convert_fonctions(va_list p_arg,char forma)
 {
 	int i;
@@ -58,39 +58,15 @@ int	convert_fonctions(va_list p_arg,char forma)
 	else if (forma == 'u')
 		i += forma_my_nbr(va_arg(p_arg, unsigned int));
 	else if (forma == 'x')
-		i += forma_my_nbrbase(va_arg(p_arg, unsigned int));
+		i += ft_argputnbr_base(unsigned long n, int d);
 	else if (forma == 'X')
-		i += forma_my_nbrbase(va_arg(p_arg, unsigned int));
+		i += ft_argputnbr_base(unsigned long n, int d);
 	else if (forma == '%')
-		i += forma_my_char(i);
+		i += forma_my_char('%');
 	return (i);
-}*/
-
-int count_convert_fonctions(char forma, va_list p_arg)
-{
-    int count = 0;
-
-    if (forma == 'c')
-        count++;
-    else if (forma == 's')
-        count += forma_my_putstr_len(va_arg(p_arg, char *));
-    else if (forma == 'p')
-        count += forma_my_nbrbase_len(va_arg(p_arg, unsigned long));
-    else if (forma == 'd' || forma == 'i')
-        count += count_forma_my_nbr(va_arg(p_arg, int));
-    else if (forma == 'u')
-        count += count_forma_my_nbr(va_arg(p_arg, unsigned int));
-    else if (forma == 'x')
-        count += count_forma_my_nbrbase(va_arg(p_arg, unsigned int));
-    else if (forma == 'X')
-        count += count_forma_my_nbrbase(va_arg(p_arg, unsigned int));
-    else if (forma == '%')
-        count++;
-
-    return count;
 }
 
-int main(void) 
+int main(void)
 {
   // Test avec un spécificateur de conversion 'c'
   ft_printf("Caractère: %c\n", 'A');

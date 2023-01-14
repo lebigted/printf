@@ -1,23 +1,33 @@
-SRCS = forma_my_char.c forma_my_nbr.c forma_my_putstr.c
+SRCS	=	forma_my_char.c \
+			forma_my_nbr.c \
+			forma_my_putstr.c \
+			forma_my_nbrbase_seize.c \
 
-OBJS = $(SRCS:.c=.o)
+OBJS	= ${SRCS:.c=.o}
 
-NAME = printf.a
-all : $(NAME)
+NAME	= libftprintf.a
+
+CC		= gcc
+
+RM		= rm -f
+
+CFLAGS	= -Wall -Wextra -Werror
 
 .c.o:
-		gcc -Wall -Wextra -Werror -c -I ./includes $< -o $(<:.c=.o)
+		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
-$(NAME): $(OBJS)
-	ar cr $(NAME) $(OBJS)
-	ranlib $(NAME)
+$(NAME):	${OBJS}
+			ar rc ${NAME} ${OBJS}
+			ranlib ${NAME}
+
+all:	${NAME}
 
 clean:
-	rm -rf $(OBJS)
+		${RM} ${OBJS}
 
-fclean: clean
-	rm -rf $(NAME)
+fclean:	clean
+		${RM} ${NAME}
 
-re: fclean all
+re :	fclean all
 
 .PHONY: all clean fclean re
