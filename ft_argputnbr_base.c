@@ -1,39 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   forma_my_putstr.c                                  :+:      :+:    :+:   */
+/*   ft_argputnbr_base.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/05 09:12:09 by ltestard          #+#    #+#             */
-/*   Updated: 2023/01/18 20:01:59 by ltestard         ###   ########.fr       */
+/*   Created: 2023/01/18 14:18:53 by ltestard          #+#    #+#             */
+/*   Updated: 2023/01/18 19:59:27 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	forma_my_putstr(char *str,int *res)
+void	ft_argputnbr_base(unsigned long n, int d, int *res)
 {
-	int	i;
+	char			*base;
+	char			c;
+	int				j;
+	unsigned long	k;
 
-	i = 0;
-	if (!str)
-		forma_my_putstr("(null)", res)
-		return ;
-	while (str[i])
+	if (d == 0)
+		base = "0123456789abcdef";
+	if (d == 1)
+		base = "0123456789ABCDEF";
+	k = (ft_strlen((unsigned long)base));
+	if (n >= k)
 	{
-		forma_my_char(str[i], res);
-		i++;
+		forma_my_nbrbase((n / k), base, res);
+		forma_my_nbrbase((n % k), base, res);
 	}
-}
-
-void	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (n < k)
 	{
-		i++;
+		c = base[n];
+		forma_my_char(c, res);
 	}
 }
