@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:12:09 by ltestard          #+#    #+#             */
-/*   Updated: 2023/01/18 20:01:59 by ltestard         ###   ########.fr       */
+/*   Updated: 2023/01/19 14:29:29 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ void	forma_my_putstr(char *str,int *res)
 
 	i = 0;
 	if (!str)
-		forma_my_putstr("(null)", res)
+	{
+		forma_my_putstr("(null)", res);
 		return ;
+	}
 	while (str[i])
 	{
 		forma_my_char(str[i], res);
