@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:10:44 by ltestard          #+#    #+#             */
-/*   Updated: 2023/01/19 15:02:32 by ltestard         ###   ########.fr       */
+/*   Updated: 2023/01/20 17:08:24 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_argputnbr_base(unsigned int n, int d, int *res);
 void	forma_my_putstr(char *str, int *res);
 void	forma_my_nbr( int nb, int *res);
 void	forma_my_char(int c, int *res);
-void	convert_fonctions(va_list p_arg,char forma, int *res);
+void	convert_fonctions(va_list p_arg, char forma, int *res);
 void	forma_my_nbrbase(unsigned long nb, char *base, int *res);
 void	forma_my_nbr_ten(unsigned int nb, int *res);
 

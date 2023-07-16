@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 14:18:53 by ltestard          #+#    #+#             */
-/*   Updated: 2023/01/19 15:02:17 by ltestard         ###   ########.fr       */
+/*   Updated: 2023/01/20 17:05:30 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_argputnbr_base(unsigned int n, int d, int *res)
 {
-	char			*base;
-	char			c;
+	char	*base;
+	char	c;
 
 	if (d == 0)
 		base = "0123456789abcdef";

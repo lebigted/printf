@@ -6,7 +6,7 @@
 /*   By: ltestard <ltestard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:17:35 by ltestard          #+#    #+#             */
-/*   Updated: 2023/01/19 15:01:33 by ltestard         ###   ########.fr       */
+/*   Updated: 2023/01/20 17:04:22 by ltestard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	forma_my_nbr(int nb, int *res)
 	}
 	if (nb < 0)
 	{
-		nb *= - 1;
+		nb *= -1;
 		forma_my_char('-', res);
 	}
 	if (nb > 9)
@@ -39,8 +39,8 @@ void	forma_my_nbrbase(unsigned long nb, char *base, int *res)
 {
 	if (nb >= 16)
 	{
-		forma_my_nbrbase((nb / 16),base, res);
-		forma_my_nbrbase((nb % 16),base, res);
+		forma_my_nbrbase((nb / 16), base, res);
+		forma_my_nbrbase((nb % 16), base, res);
 	}
 	else
 	{
